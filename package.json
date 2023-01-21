@@ -1,0 +1,27 @@
+{
+  "name": "iskcon-express",
+  "version": "1.0.0",
+  "description": "iskcon express app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiImReal403/ISKCON-Express.git"
+  },
+  "author": "AbhiImReal403",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhiImReal403/ISKCON-Express/issues"
+  },
+  "homepage": "https://github.com/AbhiImReal403/ISKCON-Express#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {}
+}
