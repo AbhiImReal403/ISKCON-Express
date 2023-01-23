@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-<%- include('./partials/head') %> 
-<body class="d-flex flex-column h-100">
-    <!-- header -->
-    <%- include('./partials/header') %> 
-    <!-- Content -->
-    <div class="content my-5 py-5">
-        <div class="container-fluid">
-            <div class="festives">
-                <h3 class="display-3 fw-50"><%= festival.title %> </h3>
-                <div class="blog-content">
-                    <p><%= festival.content %> </p>
+<%- include('./partials/head') %>
+
+    <body class="d-flex flex-column h-100">
+        <!-- header -->
+        <%- include('./partials/header') %>
+            <!-- Content -->
+            <div class="content my-5 py-5 mx-5">
+                <div class="container-fluid">
+                    <div class="festives">
+                        <h3 class="display-3 fw-50">
+                            <%= festival.title %>
+                        </h3>
+                        <div class="festival-image">
+                            <img src="/statics/<%= festival.path %>"
+                                class="img-fluid hover-shadow" alt="<%= festival.title %>" width="250" height="100"/>
+                        </div>
+                        <div class="blog-content">
+                            <p>
+                                <%= festival.content %>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- footer -->
-    <%- include('./partials/footer') %> 
+            <!-- footer -->
+            <%- include('./partials/footer') %>
 
-</body>
+    </body>
+
 </html>
