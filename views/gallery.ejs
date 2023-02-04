@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<%- include('./partials/head') %>
+
+    <body class="d-flex flex-column h-100">
+        <!-- header -->
+        <%- include('./partials/header') %>
+            <!-- Content -->
+            <div class="content my-5 py-5 mx-5">
+                <div class="container-fluid">
+
+                    <div class="row my-5">
+                        <% if (images.length>0) {%>
+                            <% images.forEach((image,index)=> {  let num = index+=1%>
+                                <div class="col-xl-3 col-lg-4  col-md-6 col-12 mb-4 mb-lg-2 mb-2 text-center">
+                                    <img src="/statics/Assets/images/gallery/<%= image %>"
+                                        onclick="openModal();currentSlide( <%= num  %> )"
+                                        class="hover-shadow border border-5 rounded-1">
+                                </div>
+
+                                <% }) %>
+                                    <% } %>
+                                        <!-- <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="/statics/Assets/images/gallery/183173833_249038323633770_3505761970057880829_n.jpg"
+                                onclick="openModal();currentSlide(2)" class="hover-shadow " style="height: 321px; width: 321px;">
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="/statics/Assets/images/gallery/184804344_253779773159625_7371643443604780405_n.jpg"
+                                onclick="openModal();currentSlide(3)" class="hover-shadow ">
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="/statics/Assets/images/gallery/185664882_251690040035265_8755463854842298229_n.jpg"
+                                onclick="openModal();currentSlide(4)" class="hover-shadow ">
+                        </div> -->
+                    </div>
+
+                    <!-- The Modal/Lightbox -->
+                    <div id="myModal" class="modal mt-5">
+                        <span class="close cursor mt-5 pt-5" onclick="closeModal()">&times;</span>
+                        <div class="modal-content mt-5">
+                            <% if (images.length>0) {%>
+                                <% images.forEach((image,index)=> {  let num = index+=1%>
+                                    <div class="mySlides">
+                                        <div class="numbertext"><%= num  %> / <%=  images.length%> </div>
+                                        <img src="/statics/Assets/images/gallery/<%= image %> " style="width:100%">
+                                    </div>
+
+                                    <% }) %>
+                                        <% } %>
+
+
+                                            <!-- <div class="mySlides">
+                                        <div class="numbertext">2 / 4</div>
+                                        <img src="/statics/Assets/images/gallery/183173833_249038323633770_3505761970057880829_n.jpg"
+                                            style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">3 / 4</div>
+                                        <img src="/statics/Assets/images/gallery/184804344_253779773159625_7371643443604780405_n.jpg"
+                                            style="width:100%">
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">4 / 4</div>
+                                        <img src="/statics/Assets/images/gallery/185664882_251690040035265_8755463854842298229_n.jpg"
+                                            style="width:100%">
+                                    </div> -->
+
+                                            <!-- Next/previous controls -->
+                                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                            <!-- Caption text -->
+                                            <div class="caption-container">
+                                                <p id="caption"></p>
+                                            </div>
+                                            <% if (images.length>0) {%>
+                                                <% images.forEach((image,index)=> { let num = index+=1%>
+
+                                                    <!-- Thumbnail image controls -->
+                                                    <div class="column my-1">
+                                                        <img class="demo"
+                                                            src="/statics/Assets/images/gallery/<%= image %> "
+                                                            onclick="currentSlide(<%= num %>)" alt="<%= image %>">
+                                                    </div>
+
+                                                    <% }) %>
+                                                        <% } %>
+
+                                                            <!-- <div class="column">
+                                                <img class="demo"
+                                                    src="/statics/Assets/images/gallery/183173833_249038323633770_3505761970057880829_n.jpg"
+                                                    onclick="currentSlide(2)" alt="Snow">
+                                            </div>
+
+                                            <div class="column">
+                                                <img class="demo"
+                                                    src="/statics/Assets/images/gallery/184804344_253779773159625_7371643443604780405_n.jpg"
+                                                    onclick="currentSlide(3)" alt="Mountains">
+                                            </div>
+
+                                            <div class="column">
+                                                <img class="demo"
+                                                    src="/statics/Assets/images/gallery/185664882_251690040035265_8755463854842298229_n.jpg"
+                                                    onclick="currentSlide(4)" alt="Lights"> -->
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+            <!-- footer -->
+            <%- include('./partials/footer') %>
+
+    </body>
+
+</html>

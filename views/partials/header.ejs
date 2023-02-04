@@ -1,37 +1,33 @@
-<header class="page-header">
+<header class="page-header ">
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-md n navbarBg fixed-top px-1 px-md-5 py-4 ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="/statics/Assets/images/mainLogo.png" alt="Logo" width="60"
-                    height="48" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="/">
+                <!-- <img src="/statics/Assets/images/mainLogo/Jaganath.png" alt="Logo" width="60"
+                    height="48" class="d-inline-block align-text-top"> -->
+                <img src="/statics/Assets/images/mainLogo/Jaganath Small.png" alt="Logo"
+                    class="d-md-inline-block align-text-top ">
+                <img src="/statics/Assets/images/mainLogo/Krishna.png" alt="Logo" style="width: 57px;height: 70px;"
+                    class="d-md-inline-block align-text-top">
+                <img src="/statics/Assets/images/mainLogo/Prabhupada Small.png" alt="Logo"style="width: 57px;height: 70px;"
+                    class="d-inline-block align-text-top">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0 justify-content-end me-4">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link <% if(curr == 'home'){ %> active<% } %> " aria-current="page"
+                            href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/festivals">Festivals</a>
+                        <a class="nav-link <% if(curr == 'festivals'){ %> active<% } %>" aria-current="page"
+                            href="/festivals">Festivals</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Festivals
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/festivals">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="/#ISKCONgallery">Gallery</a>
+                        <a class="nav-link <% if(curr == 'gallery'){ %> active<% }%>" href="/gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/#aboutISKCON">About us</a>

@@ -1,0 +1,563 @@
+@media only screen and (max-width:1450px ){
+    
+}
+
+@media only screen and (max-width:1300px ){
+    header {
+        border-bottom: 1px solid #ddd;
+    }
+    .main {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width:1200px ){
+    .navbar .nav > li > a, .mega-menu a {
+        padding: 14px 8px;
+        font-size: 14px;
+    }
+    .upcomg_text h3 {
+        font-size: 25px;
+    }
+    .day_circle ul li {
+        padding: 20px 9px;
+    }
+    .hm_text {
+        font-size: 17px;
+    }
+    .hm_text2 {
+        font-size: 12px
+    }
+    .mar_btm iframe {
+        width: 100%;
+    }
+    article {
+        margin-bottom: 10px;
+    }
+    .right-box .article-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .right-box1 .form-text {
+        width: 100%;
+    }
+    .massage-text {
+        width: 100%;
+        resize: none;
+    }
+    .baner-bg1 {
+        float: none;
+    }
+    .baner-bg1 img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .event-text {
+        height: auto;
+    }
+    .event-box-rght {
+        padding: 0;
+        float: none;
+    }
+     .mega-menu li {
+        width: 210px;
+        height: 123px;
+    }
+}
+@media only screen and (max-width:990px ){
+    .navbar-brand {
+        width: 60px;
+        padding: 0;
+    }
+    .navbar-brand img { 
+        width: 100%;
+    }
+    .navbar .clear {
+        display: none;
+    }
+    .nav {
+        margin-top: 12px;
+    }
+    .banner .header-inner {
+        bottom: 10%;
+    }
+    .banner .header-text h2 {
+        font-size: 15px;
+    }
+    .upcomg_text {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+    .day_circle {
+        float: none;
+        text-align: center;
+    }
+    .donate_btn {
+        margin-top: 10px;
+    }
+    .border_top_btm {
+        padding: 10px 0;
+    }
+    .donate_bg {
+        height: auto;
+    }
+    .donate_bg .donate_btn2 {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .imedia-object .hom_img3 {
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .article_text h3 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .media-left.media-middle p {
+        font-size: 14px;
+    }
+    .media-middle {
+        margin-top: 10px;
+        display: block;
+    }
+    .om_bg .article_text {
+        text-align: center;
+        padding: 0 10px;
+    }
+    .white_bg {
+        margin-top: 20px;
+    }
+    .donate_bg h2 {
+        font-size: 30px;
+    }
+    .donate_bg p {
+        font-size: 14px;
+    }
+    .form-box-rght {
+        padding: 0;
+    }
+     .donation-text {
+        text-align: left;
+    }
+    .donate-box-rght {
+        float: none;
+        overflow: hidden;
+    }
+    .donate-buton {
+        float: none;
+        text-align: center;
+    }
+    .send-buton {
+        float: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    ul.tab li {
+        width: 33%;
+    }
+    ul.tab li a {
+        display: block;
+        font-size: 12px;
+        padding: 14px 6px;
+    }
+    .contact-form-text {
+        width: 31.9%;
+    }
+    .contact-form-massage-text {
+        width: 97%;
+        resize: none;
+    }
+    .navbar-nav > li:nth-child(7) > .dropdown-menu {
+        left: 64%;
+    }
+     .navbar-nav > li:nth-child(2) > .dropdown-menu {
+        left: -60px;
+    }
+}
+@media only screen and (max-width:767px ){
+    
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+  .navbar-inverse .navbar-toggle {
+        border-color: #fe8f4a;
+        border-radius: 0;
+        background: #fe7d2c;
+    }
+    .navbar-brand {
+        margin-left: 10px;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        background: #2b2626;
+        margin-top: 13px;
+    }
+    .navbar .nav > li > a, .mega-menu a {
+        color: #fff;
+    }
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        background: #fe853b;
+        color: #fff;
+    }
+    .nav > li {
+        border-bottom: 1px solid rgba(221, 221, 221, 0.08);
+    }
+    .nav > li:nth-last-child(1) {
+        border-bottom: 0;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .hm_img img {
+        display: block;
+        margin: 0 auto;
+    }
+    .hm_text, .hm_text2, .hm_text2 {
+        text-align: center;
+    }
+    .latest-feature p {
+        line-height: 20px;
+        text-align: center;
+    }
+    .latest-feature .border_left {
+        height: auto;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        width: 50px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .latest-feature .icon_gap2 {
+        padding: 0;
+    }
+    .latest-feature .gap {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding: 16px 40px;
+    }
+    .garllery .col-sm-3 {
+       width: 50%;
+       float: left;
+    }
+    .garllery .gall_img {
+        float: none;
+    }
+    .donate_bg .donate_btn2 {
+        display: block;
+        margin: 0 auto;
+        width: 42%;
+        margin-top: 11px;
+    }
+    .donate_bg {
+        text-align: center;
+    }
+    .white_bg {
+        margin-top: 10px;
+    }
+    .article_bg {
+        padding: 22px 10px;
+        text-align: center;
+    }
+    .imedia-object .hom_img3 {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 10px;
+        float: none;
+        padding: 0;
+    }
+    .yellow_bg2 {
+        text-align: center;
+    }
+    .media-left.media-middle p {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .article_text h3 {
+        margin: 20px 0 11px 0;
+    }
+    .right_side {
+        margin-top: 20px;
+    }
+    .nfooter ul li {
+        text-align: center;
+        float: none;
+        display: block;
+    }
+    .nfooter .siteby {
+        text-align: center;
+    }
+    .media-left media-middle {
+        padding-right: 0;
+    }
+    .garllery {
+        margin-top: 20px;
+    }
+    .donate_bg {
+        margin-top: 20px;
+    }
+    .media-middle {
+        padding: 0;
+    }
+    .right_side .mar_btm {
+        float: left;
+        width: 50%;
+    }
+    .gallery_text {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .iner-slider {
+        float: none;
+        margin-top: 15px;
+    }
+    .right-box .article-img {
+        width: auto;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .donate-buton {
+        float: none;
+        text-align: center;
+        width: 29%;
+        margin: 0 auto;
+    }
+    .donation-text {
+        text-align: center;
+        padding: 15px 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .contactheadng {
+        margin: 0 0 22px;
+    }
+    .body-text {
+        text-align: center;
+    }
+   .body-text h4 {
+        font-size: 16px;
+    }
+    .features-box {
+        height: auto;
+        margin-bottom: 35px;
+    }
+    .features-box img {
+        margin-bottom: 10px;
+    }
+    .main {
+        text-align: center;
+    }
+    .artibg .figure {
+        float: none;
+        width: 20%;
+        margin: 0 auto;
+    }
+    .artibg .heading {
+        background: none;
+    }
+    .artibg .figurecaption {
+        width: auto;
+        margin: 0;
+        float: none;
+    }
+    .artibg {
+        padding: 25px;
+    }
+    .clear {
+        height: auto !important;
+    }
+    .news-text {
+        text-align: center;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .right-box {
+        margin-top: 14px;
+    }
+    ul.tab li {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    ul.tab li a {
+        display: block;    
+        font-size: 13px;
+        padding: 14px 10px;
+    }
+/*
+    .banner {
+        margin: 20px 0 0;
+    }
+*/
+    .send-buton {
+        margin-top: 10px;
+    }
+    .navbar-brand {
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .navbar-toggle {
+        margin-top: 14px;
+    }
+    
+    .mega-menu li{width:100%; height:auto; min-height:30px; background:#efefef; margin-bottom:0; border-bottom:1px solid #ccc;}
+  .mega-menu li .figure{display:none;} 
+  .mega-menu li .figcap {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    min-height: 30px;
+    margin: 0px 0;
+}
+  .mega-menu li .figcap a {
+    line-height: 20px; display:block;
+    color: #a33301;
+} 
+    
+ .mega-menu .container {
+    width: 100% !important;
+    padding: 0 0px;
+    position: relative;
+}   
+  .navbar-nav > li:nth-child(2) > .dropdown-menu {
+    left:auto;
+}  
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0px;
+    
+ .mega-menu .container::after { display:none;}
+   
+   .nedntsn .donat-now { background:#f58821;  border-radius:3px;  width:60%; margin:0px auto !important; line-height:40px; text-align:center; float:none !important;}
+    
+}
+@media only screen and (max-width:600px ){
+    .day_bgnew {
+        height: 200px;
+        width: 200px;
+        padding: 60px 10px;
+        margin: 0 auto;
+    } 
+    .day_bg {
+        height: 200px;
+        width: 200px;
+        padding: 60px 10px;
+        margin: 0 auto;
+    }
+    .day_circle ul li {
+        float: left;
+        width: 50%;
+    }
+    .day_circle ul {
+        display: block;
+    }
+    .article_text h3 {
+        font-size: 20px;
+    }
+    .carousel-indicators li, .carousel-indicators .active {
+        width: 10px;
+        height: 10px;
+    }
+    .donate_bg {
+        background-size: cover;
+    }
+    .right_side .mar_btm {
+        float: none;
+        width: auto;
+    }
+    .crop-box .title {
+        font-size: 19px;
+    }
+    .list-icon li {
+        font-size: 14px;
+        background-size: 19px;
+        background-position: 0;
+    }
+    .artibg .figure {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:500px ){
+    .day_circle ul li {
+        float: none;
+    }
+    .day_bgnew {
+        height: 150px;
+        width: 150px;
+        padding: 44px 24px;
+    }
+    .day_bg {
+        height: 150px;
+        width: 150px;
+        padding: 44px 24px;
+    }
+    .garllery .col-sm-3 {
+        width: auto;
+        float: none;
+    }
+    .nfooter .siteby {
+        font-size: 14px;
+    }
+    .mar_btm {
+        float: none;
+        width: auto;
+    }
+    .send-buton {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .contact-hd {
+        text-align: center;
+    }
+    .donate-buton {
+        width: 50%;
+    }
+    .main {
+        text-align: center;
+    }
+    .artibg .figure {
+        width: 100%;
+    }
+    .contact-form-text {
+        width: 100%;
+    }
+    .contact-form-massage-text {
+        width: 100%;
+    }
+    .gallery_in ul li {
+        width: 50%;
+    }
+    
+  
+    
+    
+}
+@media only screen and (max-width:480px ){ 
+    .right-box .article-img {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+    .donate-buton {
+        float: none;
+        text-align: center;
+    }
+    .crop-box .title {
+        font-size: 16px;
+    }
+    .list-icon li {
+        font-size: 12px;
+    }
+    ul.tab li {
+        width: 100%;
+    } 
+}
+@media only screen and (max-width:320px ){  
+}
