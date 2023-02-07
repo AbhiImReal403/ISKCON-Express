@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<%- include('../partials/head') %>
+
+    <body class="d-flex flex-column h-100">
+        <!-- header -->
+        <%- include('../partials/header') %>
+            <!-- Content -->
+            <div class="content my-5 py-5 mx-5">
+                <div class="container-fluid">
+                    <section id="gallery-sec" style="margin-top:40px;">
+                        <div class="container">
+                            <div class="row text-center">
+                                <ul class="clearfix">
+                                    <% if (images.length>0) {%>
+                                        <% images.forEach((image)=> {%>
+                                            <li>
+                                                <a href="/statics/Assets/images/gallery/<%= image %>" class="swipebox"
+                                                    title="<%= image %>">
+                                                    <div class="image"><img
+                                                            src="/statics/Assets/images/gallery/<%= image %>">
+                                                        <div class="overlay"><i class="fa fa-search-plus"></i></div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <% }) %>
+                                                <% } %>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+
+
+            </div>
+            <!-- footer -->
+            <%- include('../partials/footer') %>
+
+                <script type="text/javascript" src="/statics/js.2/jquery.min.js"></script>
+                <script src="/statics/js.2/bootstrap.js"></script>
+                <script src="/statics/js.2/bootsnav.js"></script>
+                <script src="/statics/js.2/banner.js"></script>
+                <script src="/statics/js.2/jquery.swipebox.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+
+                        /* Basic Gallery */
+                        $('.swipebox').swipebox();
+
+                        /* Video */
+                        $('.swipebox-video').swipebox();
+
+                        /* Dynamic Gallery */
+                        $('#gallery').click(function (e) {
+                            e.preventDefault();
+                            $.swipebox([
+                                { href: 'http://swipebox.csag.co/mages/image-1.jpg', title: 'My Caption' },
+                                { href: 'http://swipebox.csag.co/images/image-2.jpg', title: 'My Second Caption' }
+                            ]);
+                        });
+
+                    });
+                </script>
+                <script src="/statics/js.2/script.js"></script>
+
+    </body>
+
+</html>

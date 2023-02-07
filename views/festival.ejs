@@ -9,58 +9,74 @@
             <div class="fest-content my-5 py-5 mx-5">
                 <div class="container-fluid my-5 p-5 festives">
                     <div class="festives">
-                        <h3 class="display-3 fw-50 me-5 pe-5 text-decoration-underline festName">
+                        <h3 class="display-3 fw-50 text-center festName fest_header" style="">
                             <%= festival.title %>
                         </h3>
 
                         <div class="blog-content mt-5">
-                            <% if(festival.content !== '' ) {%>
+                            <% if(festival.content !=='' ) {%>
                                 <img src="/statics/<%= festival.path %>" class=" hover-shadow festival-image"
                                     alt="<%= festival.title %>"
-                                    style="shape-outside: url('/statics/<%= festival.path %>');"/>
+                                    style="shape-outside: url('/statics/<%= festival.path %>');" />
                                 <!-- <img src="/statics/<%= festival.path %>" class=" hover-shadow festival-image"
                                     alt="<%= festival.title %>"
                                     style="shape-outside: url('/statics/<%= festival.path %>');" width="590"
                                     height="400" /> -->
                                 <p>
                                     <%= festival.content %>
-                                        
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima reiciendis non at
-                                    adipisci sunt vitae nesciunt! Asperiores quod libero eligendi veniam accusantium nam
-                                    excepturi maxime ducimus laboriosam cupiditate officia voluptates tempore magni
-                                    laudantium, perferendis quidem tenetur sequi architecto id modi nemo natus culpa
-                                    necessitatibus. Commodi provident possimus molestiae numquam, tenetur saepe. Ullam,
-                                    ducimus facere unde fugiat reiciendis soluta ad, fuga nostrum asperiores
-                                    necessitatibus deserunt cumque ratione? Commodi corporis quam repudiandae tempore
-                                    deserunt id nemo expedita eveniet doloremque praesentium sunt, itaque facere
-                                    incidunt sint quo neque amet dolores, aliquid eligendi aliquam laboriosam. Placeat
-                                    laudantium incidunt quidem iusto inventore, quia quos. Qui beatae consequatur
-                                    maiores ullam, corrupti necessitatibus, minus temporibus fugiat modi cum tempora
-                                    consequuntur illo harum, omnis a accusantium deserunt. Obcaecati, dicta ad quidem
-                                    ullam minus esse molestiae blanditiis ea! Eius vitae ut vero quos, est porro dicta,
-                                    optio doloribus eligendi enim ratione commodi dolorem alias natus officiis aliquam
-                                    facilis, laudantium perspiciatis maiores. In deserunt delectus dolorum sed incidunt
-                                    eum consectetur! Inventore consectetur iste harum fugiat at odio, praesentium fuga
-                                    natus quae dolor nihil non vel nam ex similique nostrum tenetur voluptates corporis
-                                    velit officiis ad. Earum, aspernatur dolor reprehenderit recusandae laboriosam
-                                    mollitia commodi quos voluptatum nemo est dolorum sed animi cupiditate tenetur
-                                    temporibus voluptatem minus porro similique odit. Laboriosam optio excepturi
-                                    corporis totam! Vel doloremque temporibus neque dolorum voluptate vero odio, nihil
-                                    sint facere consequuntur necessitatibus atque eveniet ad qui? Consequatur,
-                                    architecto sint esse commodi tempore aliquam, voluptates recusandae tenetur omnis
-                                    fugiat porro! Beatae, modi aperiam magni molestiae itaque illo excepturi velit,
-                                    nihil dolor voluptatibus eaque vel sunt corrupti enim mollitia sint est placeat
-                                    dolorum. Deserunt magnam laboriosam atque repellendus nobis qui impedit consectetur?
-                                    Est suscipit perspiciatis iusto sunt, atque voluptate, facilis nihil itaque illum
-                                    nam id quidem nemo ea incidunt enim? Dolor velit tempore eveniet labore quaerat
-                                    expedita reprehenderit!
+
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima reiciendis non
+                                        at
+                                        adipisci sunt vitae nesciunt! Asperiores quod libero eligendi veniam accusantium
+                                        nam
+                                        excepturi maxime ducimus laboriosam cupiditate officia voluptates tempore magni
+                                        laudantium, perferendis quidem tenetur sequi architecto id modi nemo natus culpa
+                                        necessitatibus. Commodi provident possimus molestiae numquam, tenetur saepe.
+                                        Ullam,
+                                        ducimus facere unde fugiat reiciendis soluta ad, fuga nostrum asperiores
+                                        necessitatibus deserunt cumque ratione? Commodi corporis quam repudiandae
+                                        tempore
+                                        deserunt id nemo expedita eveniet doloremque praesentium sunt, itaque facere
+                                        incidunt sint quo neque amet dolores, aliquid eligendi aliquam laboriosam.
+                                        Placeat
+                                        laudantium incidunt quidem iusto inventore, quia quos. Qui beatae consequatur
+                                        maiores ullam, corrupti necessitatibus, minus temporibus fugiat modi cum tempora
+                                        consequuntur illo harum, omnis a accusantium deserunt. Obcaecati, dicta ad
+                                        quidem
+                                        ullam minus esse molestiae blanditiis ea! Eius vitae ut vero quos, est porro
+                                        dicta,
+                                        optio doloribus eligendi enim ratione commodi dolorem alias natus officiis
+                                        aliquam
+                                        facilis, laudantium perspiciatis maiores. In deserunt delectus dolorum sed
+                                        incidunt
+                                        eum consectetur! Inventore consectetur iste harum fugiat at odio, praesentium
+                                        fuga
+                                        natus quae dolor nihil non vel nam ex similique nostrum tenetur voluptates
+                                        corporis
+                                        velit officiis ad. Earum, aspernatur dolor reprehenderit recusandae laboriosam
+                                        mollitia commodi quos voluptatum nemo est dolorum sed animi cupiditate tenetur
+                                        temporibus voluptatem minus porro similique odit. Laboriosam optio excepturi
+                                        corporis totam! Vel doloremque temporibus neque dolorum voluptate vero odio,
+                                        nihil
+                                        sint facere consequuntur necessitatibus atque eveniet ad qui? Consequatur,
+                                        architecto sint esse commodi tempore aliquam, voluptates recusandae tenetur
+                                        omnis
+                                        fugiat porro! Beatae, modi aperiam magni molestiae itaque illo excepturi velit,
+                                        nihil dolor voluptatibus eaque vel sunt corrupti enim mollitia sint est placeat
+                                        dolorum. Deserunt magnam laboriosam atque repellendus nobis qui impedit
+                                        consectetur?
+                                        Est suscipit perspiciatis iusto sunt, atque voluptate, facilis nihil itaque
+                                        illum
+                                        nam id quidem nemo ea incidunt enim? Dolor velit tempore eveniet labore quaerat
+                                        expedita reprehenderit!
                                 </p>
                                 <% }else{ %>
-                                    <img src="/statics/<%= festival.path %>" class=" hover-shadow festival-imageNotice  mx-auto d-block "
-                                    alt="<%= festival.title %>"
-                                    style="shape-outside: url('/statics/<%= festival.path %>');" />
-                                    <% } %> 
-                                    <p></p>
+                                    <img src="/statics/<%= festival.path %>"
+                                        class=" hover-shadow festival-imageNotice  mx-auto d-block "
+                                        alt="<%= festival.title %>"
+                                        style="shape-outside: url('/statics/<%= festival.path %>');" />
+                                    <% } %>
+                                        <p></p>
                         </div>
                     </div>
                 </div>

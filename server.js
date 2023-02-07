@@ -119,5 +119,13 @@ app.get('/gallery', (req, res) => {
     // console.log(festivals[1].content)
 })
 
-// console.log(fs.existsSync('./public/Assets/images/gallery'))
-// console.log(galleryArray);
+
+
+app.get('/gallery2.0', (req, res) => {
+
+    res.render('./2.0/gallery2', { images: galleryArray, curr: 'gallery' })
+    // console.log(festivals[1].content)
+})
+
+
+

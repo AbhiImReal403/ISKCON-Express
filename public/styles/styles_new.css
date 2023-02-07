@@ -412,7 +412,8 @@ body {
 } */
 
 .cprit {
-    color: #b5b0b080 !important;
+    /* color: #b5b0b080 !important; */
+    color: #ffffff !important;
 }
 
 /* Footer Social Buttons */
@@ -445,7 +446,7 @@ body {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 1031;
     /* Sit on top */
     padding-top: 100px;
     /* Location of the box */
@@ -468,7 +469,7 @@ body {
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 350px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -800,7 +801,15 @@ body>div>div>div.row.my-5>div>img {
 
 }
 
-
+.fest_header {
+    font-size: 3rem;
+    font-optical-sizing: auto;
+    font-family: 'Poppins rev=2';
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: initial;
+}
 
 
 .fest-content {
@@ -826,37 +835,101 @@ body>div>div>div.row.my-5>div>img {
 }
 
 .blog-content {
-    margin-left: 10px;
+    hyphens: auto;
 }
 
 .blog-content p {
     text-align: justify;
+    text-justify: none;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
 }
 
 .festives {
     background: url(./../Assets/images/bg3lg.png);
 }
 
-@media only screen and (max-width: 1000px ) and (min-width: 920px ) {
+@media only screen and (max-width: 1000px) and (min-width: 920px) {
 
     .festival-image {
         width: 540px;
-        height: 390px
+        height: 390px;
+        margin-top: 0;
     }
 }
+
+@media only screen and (max-width: 1077px) and (min-width: 920px) {
+    .blog-content {
+        margin-left: 10px;
+        hyphens: auto;
+    }
+
+    .blog-content p {
+        text-align: justify;
+        text-justify: none;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 977px) and (min-width: 920px) {
+    .blog-content p {
+        text-align: justify;
+        text-justify: none;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.05rem;
+    }
+}
+
 @media only screen and (max-width: 920px) {
 
     .festival-image {
-        float:none;
+        float: none;
         width: 540px;
-        height: 390px
+        height: 390px;
+        margin-bottom: 1.5rem;
+        margin-top: 0;
     }
 }
+
 @media only screen and (max-width: 700px) {
 
-    .festival-image,.festival-imageNotice {
-        float:none;
+    .festival-image,
+    .festival-imageNotice {
+        float: none;
         width: 14rem;
         height: 14rem;
+        margin-top: 0;
+    }
+
+    .fest_header {
+        font-size: 2rem;
+        font-optical-sizing: auto;
+        font-family: 'Poppins rev=2';
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: initial;
+    }
+
+    .blog-content p {
+        text-align: justify;
+        text-justify: none;
+        line-height: 1.5rem;
+        letter-spacing: 0.1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.05rem;
+        hyphens: auto;
+    }
+
+    .blog-content {
+        width: 100%;
+        height: 100%;
     }
 }
