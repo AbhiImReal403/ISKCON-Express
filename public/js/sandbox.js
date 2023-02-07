@@ -29,15 +29,15 @@ var captionText = document.getElementById("caption");
 //     console.log('clicked on btn')
 // }
 
-donateNowSection.addEventListener('click', (e) =>{
+donateNowSection.addEventListener('click', (e) => {
 
-    if(e.target.classList.contains('donateNow-btn')){
-        e.preventDefault();
-        e.stopPropagation();
-        modal.style.display = "block";
-    }
-    console.log('event captured');
-    console.log(e.target.classList.contains('donateNow-btn'));
+  if (e.target.classList.contains('donateNow-btn')) {
+    e.preventDefault();
+    e.stopPropagation();
+    modal.style.display = "block";
+  }
+  console.log('event captured');
+  console.log(e.target.classList.contains('donateNow-btn'));
 })
 
 // Get the <span> element that closes the modal
@@ -45,7 +45,7 @@ var span = document.getElementsByClassName("close-donatenow")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-    modal.style.display = "none";
+  modal.style.display = "none";
 }
 
 
@@ -80,15 +80,27 @@ function showSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
   var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+
+
+
+
+// Copy Account details
+
+
+function copy2clpbd(element) {
+  let copyTxt = document.querySelector(`${element}`);
+  navigator.clipboard.writeText(copyTxt.textContent);
+
 }

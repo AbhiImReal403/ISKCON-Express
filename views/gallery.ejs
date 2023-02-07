@@ -11,7 +11,7 @@
 
                     <div class="row my-5">
                         <% if (images.length>0) {%>
-                            <% images.forEach((image,index)=> {  let num = index+=1%>
+                            <% images.forEach((image,index)=> { let num = index+=1%>
                                 <div class="col-xl-3 col-lg-4  col-md-6 col-12 mb-4 mb-lg-2 mb-2 text-center">
                                     <img src="/statics/Assets/images/gallery/<%= image %>"
                                         onclick="openModal();currentSlide( <%= num  %> )"
@@ -38,72 +38,43 @@
                     <div id="myModal" class="modal mt-5">
                         <span class="close cursor mt-5 pt-5" onclick="closeModal()">&times;</span>
                         <div class="modal-content mt-5">
-                            <% if (images.length>0) {%>
-                                <% images.forEach((image,index)=> {  let num = index+=1%>
-                                    <div class="mySlides">
-                                        <div class="numbertext"><%= num  %> / <%=  images.length%> </div>
-                                        <img src="/statics/Assets/images/gallery/<%= image %> " style="width:100%">
-                                    </div>
-
-                                    <% }) %>
-                                        <% } %>
-
-
-                                            <!-- <div class="mySlides">
-                                        <div class="numbertext">2 / 4</div>
-                                        <img src="/statics/Assets/images/gallery/183173833_249038323633770_3505761970057880829_n.jpg"
-                                            style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">3 / 4</div>
-                                        <img src="/statics/Assets/images/gallery/184804344_253779773159625_7371643443604780405_n.jpg"
-                                            style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <div class="numbertext">4 / 4</div>
-                                        <img src="/statics/Assets/images/gallery/185664882_251690040035265_8755463854842298229_n.jpg"
-                                            style="width:100%">
-                                    </div> -->
-
-                                            <!-- Next/previous controls -->
-                                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                            <!-- Caption text -->
-                                            <div class="caption-container">
-                                                <p id="caption"></p>
+                            <div class="slideContainerGallery">
+                                <% if (images.length>0) {%>
+                                    <% images.forEach((image,index)=> { let num = index+=1%>
+                                        <div class="mySlides">
+                                            <div class="numbertext">
+                                                <%= num %> / <%= images.length%>
                                             </div>
-                                            <% if (images.length>0) {%>
-                                                <% images.forEach((image,index)=> { let num = index+=1%>
+                                            <img src="/statics/Assets/images/gallery/<%= image %> " style="width:100%">
+                                        </div>
 
-                                                    <!-- Thumbnail image controls -->
-                                                    <div class="column my-1">
-                                                        <img class="demo"
-                                                            src="/statics/Assets/images/gallery/<%= image %> "
-                                                            onclick="currentSlide(<%= num %>)" alt="<%= image %>">
-                                                    </div>
+                                        <% }) %>
+                                            <% } %>
 
-                                                    <% }) %>
-                                                        <% } %>
+                                                <!-- Next/previous controls -->
+                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
 
-                                                            <!-- <div class="column">
-                                                <img class="demo"
-                                                    src="/statics/Assets/images/gallery/183173833_249038323633770_3505761970057880829_n.jpg"
-                                                    onclick="currentSlide(2)" alt="Snow">
-                                            </div>
 
-                                            <div class="column">
-                                                <img class="demo"
-                                                    src="/statics/Assets/images/gallery/184804344_253779773159625_7371643443604780405_n.jpg"
-                                                    onclick="currentSlide(3)" alt="Mountains">
-                                            </div>
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+                            <div class="thumnailContainerGallery">
+                                <% if (images.length>0) {%>
+                                    <% images.forEach((image,index)=> { let num = index+=1%>
 
-                                            <div class="column">
-                                                <img class="demo"
-                                                    src="/statics/Assets/images/gallery/185664882_251690040035265_8755463854842298229_n.jpg"
-                                                    onclick="currentSlide(4)" alt="Lights"> -->
+                                        <!-- Thumbnail image controls -->
+                                        <div class="column my-1">
+                                            <img class="demo" src="/statics/Assets/images/gallery/<%= image %> "
+                                                onclick="currentSlide(<%= num %>)" alt="<%= image %>">
+                                        </div>
+
+                                        <% }) %>
+                                            <% } %>
+                            </div>
+
                         </div>
 
                     </div>

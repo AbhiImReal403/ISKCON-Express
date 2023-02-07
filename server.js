@@ -92,7 +92,7 @@ if (fs.existsSync('./public/Assets/images/gallery')) {
     const imgsJsonList = fs.readdirSync('./public/Assets/images/gallery');
     // console.log(imgsJsonList)
     imgsJsonList.forEach((filename) => {
-        if (filename.split('.').pop() === 'jpg') {
+        if (filename.split('.').pop() === 'jpg' || filename.split('.').pop() === 'jpeg') {
 
             galleryArray.push(filename)
             //     fs.readFile(`./public/Assets/images/gallery${filename}`, 'utf-8', (err, data) => {

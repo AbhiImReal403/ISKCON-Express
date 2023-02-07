@@ -166,20 +166,20 @@ body {
     /* background-image: linear-gradient(135deg, #0e509a, #0366d6); */
     /* color: #fff; */
 
-
+    /* 
     background: rgb(2, 3, 129);
     background: -moz-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1); */
 
 
-    /* background: rgb(2, 3, 129);
-    background: -moz-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%,rgba(2, 3, 129, 1)  100%);
-    background: -webkit-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%,rgba(2, 3, 129, 1)  100%);
-    background: linear-gradient(135deg, rgba(40, 116, 252, 1) 0%,rgba(2, 3, 129, 1)  100%);
+    background: rgb(2, 3, 129);
+    background: -moz-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
-    color: #ffffff; */
+    color: #ffffff;
 }
 
 .navbarBg a.nav-link {
@@ -204,10 +204,17 @@ body {
 /* First Banner */
 
 .msgBanner-bg-text {
-    background: rgb(2, 3, 129);
+    /* background: rgb(2, 3, 129);
     background: -moz-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
+    color: #ffffff; */
+
+    background: rgb(2, 3, 129);
+    background: -moz-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
     color: #ffffff;
 }
@@ -255,10 +262,17 @@ body {
 
 
 .new-block-custom a.btn-primary:hover {
-    background: rgb(2, 3, 129);
+    /* background: rgb(2, 3, 129);
     background: -moz-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
     background: linear-gradient(135deg, rgba(2, 3, 129, 1) 0%, rgba(40, 116, 252, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
+    color: #ffffff; */
+
+    background: rgb(2, 3, 129);
+    background: -moz-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
+    background: linear-gradient(135deg, rgba(40, 116, 252, 1) 0%, rgba(2, 3, 129, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020381", endColorstr="#2874fc", GradientType=1);
     color: #ffffff;
 }
@@ -320,6 +334,14 @@ body {
         padding: 6px 25px;
     }
 }
+
+.copybtnSet {
+    padding: 1.1px;
+    font-size: 0.7rem;
+}
+
+
+
 
 
 
@@ -767,7 +789,74 @@ body>div>div>div.row.my-5>div>img {
     }
 }
 
-.festPost {
-    background: url(../Assets/images/cardBG.png) repeat;
 
+
+
+/* festival section */
+
+
+.festPost {
+    background: url(../Assets/images/bg3lg.png) repeat;
+
+}
+
+
+
+
+.fest-content {
+    position: relative;
+    top: 100px
+}
+
+.festName {
+    text-align: center;
+}
+
+.festival-image {
+    width: 590px;
+    height: 400px;
+    float: left;
+    shape-margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.festival-imageNotice {
+    text-align: center;
+}
+
+.blog-content {
+    margin-left: 10px;
+}
+
+.blog-content p {
+    text-align: justify;
+}
+
+.festives {
+    background: url(./../Assets/images/bg3lg.png);
+}
+
+@media only screen and (max-width: 1000px ) and (min-width: 920px ) {
+
+    .festival-image {
+        width: 540px;
+        height: 390px
+    }
+}
+@media only screen and (max-width: 920px) {
+
+    .festival-image {
+        float:none;
+        width: 540px;
+        height: 390px
+    }
+}
+@media only screen and (max-width: 700px) {
+
+    .festival-image,.festival-imageNotice {
+        float:none;
+        width: 1rem;
+        height: 1rem;
+    }
 }
