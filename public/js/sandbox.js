@@ -100,6 +100,7 @@ function showSlides(n) {
 
 
 function copy2clpbd(element) {
+  
   let copyTxt = document.querySelector(`${element}`);
   navigator.clipboard.writeText(copyTxt.textContent);
 
