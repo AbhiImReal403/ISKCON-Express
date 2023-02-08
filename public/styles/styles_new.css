@@ -378,12 +378,12 @@ body {
     margin: 0 25px 3px 0;
 }
 
-.artImg{
-    width:450px;
+.artImg {
+    width: 450px;
     height: auto;
 }
 
-.articleHeadingsAbt{
+.articleHeadingsAbt {
     font-size: 20px;
     font-weight: 700;
     color: #c73307;
@@ -391,13 +391,17 @@ body {
     margin: 8px;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 768px) {
     .article_text p {
         margin: 23px;
+        margin-left: 0;
         line-height: 1.2rem;
         letter-spacing: 0.05rem;
     }
-
+    .artImg {
+        width: 365px;
+        height: auto;
+    }
 }
 
 
@@ -828,6 +832,25 @@ body>div>div>div.row.my-5>div>img {
 
 /* festival section */
 
+.festcardHeading {
+    font-size: 25px;
+    font-weight: 700;
+    color: #c73307;
+    display: block;
+}
+
+.festCardDate {
+
+    font-size: 12px;
+    margin: 2px;
+
+}
+
+.festimgplaceHolder{
+    width: 200px;
+    height: 150px;
+}
+
 
 .festPost {
     background: url(../Assets/images/bg3lg.png) repeat;
@@ -865,7 +888,12 @@ body>div>div>div.row.my-5>div>img {
 
 .festival-imageNotice {
     text-align: center;
+    height: auto;
+    width: 400px;
 }
+
+
+
 
 .blog-content {
     hyphens: auto;

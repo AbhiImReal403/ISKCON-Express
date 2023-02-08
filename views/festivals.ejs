@@ -24,18 +24,18 @@
                                             class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative  festPost">
                                             <div class="col p-4 d-flex flex-column position-static">
                                                 <strong class="d-inline-block mb-2 text-primary"></strong>
-                                                <h3 class="mb-0">
+                                                <h3 class="mb-0 festcardHeading">
                                                     <%= festival.title %>
                                                 </h3>
-                                                <div class="mb-1 text-muted">Nov 12</div>
-                                                <p class="card-text mb-auto overflow-hidden" style="height: 3rem;">
+                                                <div class="mb-1 text-muted festCardDate">Nov 12</div>
+                                                <p class="card-text mb-auto overflow-hidden" style="height: 9rem;">
                                                     <%= festival.content %>
                                                 </p>
                                                 <a href="/festivals/<%= festival.title %>-<%= index  %> "
                                                     class="stretched-link">Continue reading</a>
                                             </div>
-                                            <div class="col-auto d-none d-lg-block">
-                                                <img class="bd-placeholder-img" width="200" height="250"
+                                            <div class="col-auto d-none d-lg-block mt-5 pt-4 pe-4">
+                                                <img class="bd-placeholder-img festimgplaceHolder"
                                                     src="/statics<%= festival.path %>"
                                                     aria-label="<%= festival.title %> image">
                                             </div>
