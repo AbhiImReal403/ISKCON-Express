@@ -193,6 +193,16 @@ body {
     color: #a3bfff !important;
 }
 
+.navbar-white-toggler {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var('<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' ><path stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
 
 /* Carousel Image styling */
 
@@ -221,6 +231,28 @@ body {
     color: #ffffff;
 }
 
+.msgtext {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 992px) {
+    .msgtext {
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .msgtext {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .msgtext {
+        font-size: 12px;
+    }
+}
 
 /* Second Banner */
 
@@ -398,6 +430,7 @@ body {
         line-height: 1.2rem;
         letter-spacing: 0.05rem;
     }
+
     .artImg {
         width: 365px;
         height: auto;
@@ -846,7 +879,7 @@ body>div>div>div.row.my-5>div>img {
 
 }
 
-.festimgplaceHolder{
+.festimgplaceHolder {
     width: 200px;
     height: 150px;
 }
