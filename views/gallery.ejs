@@ -8,8 +8,15 @@
             <!-- Content -->
             <div class="content my-5 py-5 mx-5">
                 <div class="container-fluid">
-
-                    <div class="row my-5">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb" class="mt-5 pt-2">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">All</li>
+                            <li class="breadcrumb-item"><a href="#">Festivals</a></li>
+                            <li class="breadcrumb-item"><a href="#">Activities</a></li>
+                        </ol>
+                    </nav>
+                    <div class="row mt-2 my-5">
                         <% if (images.length>0) {%>
                             <% images.forEach((image,index)=> { let num = index+=1%>
                                 <div class="col-xl-3 col-lg-4  col-md-6 col-12 mb-4 mb-lg-2 mb-2 text-center">
@@ -52,8 +59,8 @@
                                             <% } %>
 
                                                 <!-- Next/previous controls -->
-                                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                                <a class="prev" onclick="plusSlides(-1)" style="text-decoration: none;">&#10094;</a>
+                                                <a class="next" onclick="plusSlides(1)" style="text-decoration: none;">&#10095;</a>
                             </div>
 
 

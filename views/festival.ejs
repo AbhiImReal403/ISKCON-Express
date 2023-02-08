@@ -71,12 +71,20 @@
                                         expedita reprehenderit!
                                 </p>
                                 <% }else{ %>
-                                    <img src="/statics/<%= festival.path %>"
-                                        class=" hover-shadow festival-imageNotice  mx-auto d-block "
-                                        alt="<%= festival.title %>"
-                                        style="shape-outside: url('/statics/<%= festival.path %>');" />
-                                    <% } %>
-                                        <p></p>
+                                    <div style="
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: auto;
+                                ">
+                                        <img src="/statics/<%= festival.path %>"
+                                            class=" hover-shadow festival-imageNotice  mx-auto d-block "
+                                            alt="<%= festival.title %>" style="
+                                            height: auto;
+                                            width: 400px;
+                                        " />
+                                        <% } %>
+                                    </div>
+                                    <p></p>
                         </div>
                     </div>
                 </div>
