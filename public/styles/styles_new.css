@@ -367,7 +367,38 @@ body {
     padding: 21px 0px;
 }
 
+.article_text p {
+    margin: 5px;
+    line-height: 1.2rem;
+    letter-spacing: 0.05rem;
+}
 
+.imedia-object {
+    float: left;
+    margin: 0 25px 3px 0;
+}
+
+.artImg{
+    width:450px;
+    height: auto;
+}
+
+.articleHeadingsAbt{
+    font-size: 20px;
+    font-weight: 700;
+    color: #c73307;
+    display: block;
+    margin: 8px;
+}
+
+@media only screen and (min-width: 767px) {
+    .article_text p {
+        margin: 23px;
+        line-height: 1.2rem;
+        letter-spacing: 0.05rem;
+    }
+
+}
 
 
 
