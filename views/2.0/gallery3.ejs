@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-<%- include('./partials/head') %>
+<%- include('../partials/head') %>
 
     <body class="d-flex flex-column h-100">
         <!-- header -->
-        <%- include('./partials/header') %>
+        <%- include('../partials/header') %>
             <!-- Content -->
             <div class="content my-5 mx-5">
                 <div class="container-fluid">
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-                        aria-label="breadcrumb" class="mt-5 pt-2">
+                        aria-label="breadcrumb" class="mt-5 pt-3">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item active" aria-current="page">All</li>
                             <li class="breadcrumb-item"><a href="#">Festivals</a></li>
                             <li class="breadcrumb-item"><a href="#">Activities</a></li>
                         </ol>
                     </nav>
-                    <div class="row mt-2 my-5">
+                    <div class="row mt-2 my-5" data-masonry='{"percentPosition": true }''>
                         <% if (images.length>0) {%>
                             <% images.forEach((image,index)=> { let num = index+=1%>
                                 <div class="col-xl-3 col-lg-4  col-md-6 col-12 mb-4 mb-lg-2 mb-2 text-center">
                                     <img src="/statics/Assets/images/gallery/<%= image %>"
                                         onclick="openModal();currentSlide( <%= num  %> )"
-                                        class="hover-shadow border border-5 rounded-1">
+                                        class="hover-shadow border border-5 rounded-1 img-fluid">
                                 </div>
 
                                 <% }) %>
@@ -91,8 +91,11 @@
             </div>
             </div>
             <!-- footer -->
-            <%- include('./partials/footer') %>
+            <%- include('../partials/footer') %>
 
+            <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+                            integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+                            crossorigin="anonymous" async></script>
     </body>
 
 </html>

@@ -115,7 +115,7 @@ if (fs.existsSync('./public/Assets/images/gallery')) {
 
 app.get('/gallery', (req, res) => {
 
-    res.render('gallery', { images: galleryArray, curr: 'gallery' })
+    res.render('./2.0/gallery3', { images: galleryArray, curr: 'gallery' })
     // console.log(festivals[1].content)
 })
 
@@ -124,6 +124,11 @@ app.get('/gallery', (req, res) => {
 app.get('/gallery2.0', (req, res) => {
 
     res.render('./2.0/gallery2', { images: galleryArray, curr: 'gallery' })
+    // console.log(festivals[1].content)
+})
+app.get('/gallery3', (req, res) => {
+
+    res.render('./2.0/gallery3', { images: galleryArray, curr: 'gallery' })
     // console.log(festivals[1].content)
 })
 
