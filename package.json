@@ -23,6 +23,7 @@
     "express": "^4.18.2",
     "express-device": "^0.4.2",
     "jsonparser": "^1.0.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "npm": "^9.4.2"
   }
 }

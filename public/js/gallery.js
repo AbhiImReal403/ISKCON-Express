@@ -14,7 +14,7 @@ const imagesSet = document.querySelectorAll('.imgViewSet')
 
 var container = document.querySelector('#imageContainer');
 var msnry = new Masonry('#imageContainer', {
-    columnWidth: 60,
+    columnWidth: 10,
   itemSelector: '.imgViewSet',
   horizontalOrder: true,
   

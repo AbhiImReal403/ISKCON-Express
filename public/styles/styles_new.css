@@ -193,6 +193,15 @@ body {
     color: #a3bfff !important;
 }
 
+
+.siteNameHead{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+
 /* .navbar-white-toggler {
     display: inline-block;
     width: 1.5em;
