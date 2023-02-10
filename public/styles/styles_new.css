@@ -852,30 +852,36 @@ img.hover-shadow {
 }
 
 
-/* 
+
 img.demo {
     width: 189px;
     height: 126px;
 }
 
 
-body>div>div>div.row.my-5>div>img {
+/* body>div>div>div.row.my-5>div>img {
     height: 321px;
     width: 321px;
-}
+} */
 
 @media only screen and (max-width: 700px) {
-    body>div>div>div.row.my-5>div>img {
+    /* body>div>div>div.row.my-5>div>img {
         height: 277px;
         width: 277px;
-    }
+    } */
 
     img.demo {
         width: 80px;
         height: 80px;
     }
 }
- */
+
+.breadcrumb-item{
+    cursor: pointer;
+}
+
+
+
 
 
 

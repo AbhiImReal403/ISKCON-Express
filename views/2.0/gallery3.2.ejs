@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<%- include('../partials/head') %>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #container {
+            background: #EEE;
+            max-width: 640px;
+        }
+
+        .item {
+            width: 60px;
+            height: 60px;
+            float: left;
+            background: #D26;
+            border: 2px solid #333;
+            border-color: hsla(0, 0%, 0%, 0.5);
+            border-radius: 5px;
+        }
+
+        .item.w2 {
+            width: 120px;
+        }
+
+        .item.w3 {
+            width: 180px;
+        }
+
+        .item.w4 {
+            width: 240px;
+        }
+
+        .item.h2 {
+            height: 100px;
+        }
+
+        .item.h3 {
+            height: 130px;
+        }
+
+        .item.h4 {
+            height: 180px;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+        .hide-w2 .w2 {
+            display: none;
+        }
+    </style>
+
+    <body class="d-flex flex-column h-100">
+        <!-- header -->
+        <!-- Content -->
+        <h1>Masonry - hidden items</h1>
+        <p><button id="toggler">Toggle .w2 items</button></p>
+        <div id="container" data-masonry-options='{ "columnWidth": 60 }'>
+            <div class="item"></div>
+            <div class="item w2 h2"></div>
+            <div class="item h3"></div>
+            <div class="item h2"></div>
+            <div class="item w3"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item h2"></div>
+            <div class="item w2 h3"></div>
+            <div class="item"></div>
+            <div class="item h2"></div>
+            <div class="item"></div>
+            <div class="item w2 h2"></div>
+            <div class="item w2"></div>
+            <div class="item"></div>
+            <div class="item h2"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item h3"></div>
+            <div class="item h2"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item h2"></div>
+        </div>
+
+        <!-- footer -->
+        <%- include('../partials/footer') %>
+
+            <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+                integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+                crossorigin="anonymous" async></script>
+            <script src="/statics/js/gallery.js"></script>
+            <script>// masonry.pkgd.js added as external resource
+
+                docReady(function () {
+
+                    var container = document.querySelector('#container');
+                    var msnry = new Masonry(container, {
+                        columnWidth: 60
+                    });
+
+                    var togglerButton = document.querySelector('#toggler');
+                    var areW2Hidden = false;
+                    eventie.bind(togglerButton, 'click', function () {
+                        areW2Hidden = !areW2Hidden;
+                        container.className = areW2Hidden ? 'hide-w2' : '';
+                        msnry.layout();
+                    });
+                });</script>
+    </body>
+
+</html>

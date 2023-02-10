@@ -128,7 +128,7 @@ app.get('/gallery2.0', (req, res) => {
 })
 app.get('/gallery3', (req, res) => {
 
-    res.render('./2.0/gallery3', { images: galleryArray, curr: 'gallery' })
+    res.render('./2.0/gallery3.2.ejs', { images: galleryArray, curr: 'gallery' })
     // console.log(festivals[1].content)
 })
 
