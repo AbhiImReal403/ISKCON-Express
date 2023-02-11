@@ -13,8 +13,8 @@ app.use('/statics', express.static('public'));
 
 app.set('view engine', 'ejs');
 
-app.listen(3000)
-console.log('listening on port 3000')
+app.listen(5000)
+console.log('listening on port 5000')
 
 
 app.get('/', (req, res) => {
