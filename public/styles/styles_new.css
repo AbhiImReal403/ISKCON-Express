@@ -193,12 +193,41 @@ body {
     color: #a3bfff !important;
 }
 
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
 
-.siteNameHead{
+.siteNameHead {
     color: white;
     font-size: 2.5rem;
     font-weight: 700;
 }
+
+@media screen and (max-width: 992px) {
+    .siteNameHead {
+        color: white;
+        font-size: 1.12rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .siteNameHead {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .siteNameHead {
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+}
+
+
 
 
 
@@ -885,7 +914,7 @@ img.demo {
     }
 }
 
-.breadcrumb-item{
+.breadcrumb-item {
     cursor: pointer;
 }
 
