@@ -17,7 +17,7 @@
 
 
                         <div class="row mb-2 mx-5 py-5">
-                            <% if (festivals.length>0) {%>
+                            <% if (festivals.length>0 ) {%>
                                 <% festivals.forEach((festival,index)=> { %>
                                     <div class="col-md-6">
                                         <div
@@ -28,17 +28,28 @@
                                                     <%= festival.title %>
                                                 </h3>
                                                 <div class="mb-1 text-muted festCardDate">Nov 12</div>
-                                                <p class="card-text mb-auto overflow-hidden" style="height: 6rem;">
-                                                    <%= festival.content %>
-                                                </p>
-                                                <a href="/festivals/<%= festival.title %>-<%= index  %> "
-                                                    class="stretched-link">Continue reading</a>
+                                                <% if(festival.content !=='' ) {%>
+                                                    <p class="card-text mb-auto overflow-hidden" style="height: 6rem;">
+                                                        <%= festival.content %>
+                                                    </p>
+                                                    <a href="/festivals/<%= festival.title %>-<%= index  %> "
+                                                        class="stretched-link">Continue reading</a>
+                                                    <% }else{ %>
+                                                        <div
+                                                            class="col-auto d-none d-lg-block mt-3 pt-4 mb-2 pb-2 pe-4">
+                                                            <img class="bd-placeholder-img festimgplaceHolder"
+                                                                src="/statics<%= festival.path %>"
+                                                                aria-label="<%= festival.title %> images">
+                                                        </div>
+                                                        <% } %>
                                             </div>
-                                            <div class="col-auto d-none d-lg-block mt-3 pt-4 mb-2 pb-2 pe-4">
-                                                <img class="bd-placeholder-img festimgplaceHolder"
-                                                    src="/statics<%= festival.path %>"
-                                                    aria-label="<%= festival.title %> image">
-                                            </div>
+                                            <% if(festival.content !=='' ) {%>
+                                                <div class="col-auto d-none d-lg-block mt-3 pt-4 mb-2 pb-2 pe-4">
+                                                    <img class="bd-placeholder-img festimgplaceHolder"
+                                                        src="/statics<%= festival.path %>"
+                                                        aria-label="<%= festival.title %> images">
+                                                </div>
+                                                <% } %>
                                         </div>
                                     </div>
                                     <% }) %>
