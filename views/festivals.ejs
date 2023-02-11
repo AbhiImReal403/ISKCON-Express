@@ -27,8 +27,10 @@
                                                 <h3 class="mb-0 festcardHeading">
                                                     <%= festival.title %>
                                                 </h3>
-                                                <div class="mb-1 text-muted festCardDate">Nov 12</div>
-                                                <% if(festival.content !=='' ) {%>
+                                                <div class="mb-1 text-muted festCardDate">
+                                                    <%= festival.date %>
+                                                </div>
+                                                <% if(festival.content !='' ) {%>
                                                     <p class="card-text mb-auto overflow-hidden" style="height: 6rem;">
                                                         <%= festival.content %>
                                                     </p>
@@ -38,18 +40,22 @@
                                                         <div
                                                             class="col-auto d-none d-lg-block mt-3 pt-4 mb-2 pb-2 pe-4">
                                                             <img class="bd-placeholder-img festimgplaceHolder"
-                                                                src="/statics<%= festival.path %>"
+                                                                src="/statics<%= festival.cardImg %>"
                                                                 aria-label="<%= festival.title %> images">
-                                                        </div>
+                                                    </div>
+                                                        <a href="/festivals/<%= festival.title %>-<%= index  %> "
+                                                            class="stretched-link">Continue reading</a>
                                                         <% } %>
                                             </div>
-                                            <% if(festival.content !=='' ) {%>
+                                            <!-- <% if(festival.content =='' ) {%>
+                                                <a href="/festivals/<%= festival.title %>-<%= index  %> "
+                                                    class="stretched-link">Continue reading</a>
                                                 <div class="col-auto d-none d-lg-block mt-3 pt-4 mb-2 pb-2 pe-4">
                                                     <img class="bd-placeholder-img festimgplaceHolder"
-                                                        src="/statics<%= festival.path %>"
+                                                        src="/statics<%= festival.cardImg %>"
                                                         aria-label="<%= festival.title %> images">
                                                 </div>
-                                                <% } %>
+                                                <% } %> -->
                                         </div>
                                     </div>
                                     <% }) %>

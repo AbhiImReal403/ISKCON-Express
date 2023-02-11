@@ -15,76 +15,34 @@
 
                         <div class="blog-content mt-5">
                             <% if(festival.content !=='' ) {%>
-                                <img src="/statics/<%= festival.path %>" class=" hover-shadow festival-image"
-                                    alt="<%= festival.title %>"
-                                    style="shape-outside: url('/statics/<%= festival.path %>');" />
-                                <!-- <img src="/statics/<%= festival.path %>" class=" hover-shadow festival-image"
-                                    alt="<%= festival.title %>"
-                                    style="shape-outside: url('/statics/<%= festival.path %>');" width="590"
-                                    height="400" /> -->
-                                <p>
-                                    <%= festival.content %>
 
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima reiciendis non
-                                        at
-                                        adipisci sunt vitae nesciunt! Asperiores quod libero eligendi veniam accusantium
-                                        nam
-                                        excepturi maxime ducimus laboriosam cupiditate officia voluptates tempore magni
-                                        laudantium, perferendis quidem tenetur sequi architecto id modi nemo natus culpa
-                                        necessitatibus. Commodi provident possimus molestiae numquam, tenetur saepe.
-                                        Ullam,
-                                        ducimus facere unde fugiat reiciendis soluta ad, fuga nostrum asperiores
-                                        necessitatibus deserunt cumque ratione? Commodi corporis quam repudiandae
-                                        tempore
-                                        deserunt id nemo expedita eveniet doloremque praesentium sunt, itaque facere
-                                        incidunt sint quo neque amet dolores, aliquid eligendi aliquam laboriosam.
-                                        Placeat
-                                        laudantium incidunt quidem iusto inventore, quia quos. Qui beatae consequatur
-                                        maiores ullam, corrupti necessitatibus, minus temporibus fugiat modi cum tempora
-                                        consequuntur illo harum, omnis a accusantium deserunt. Obcaecati, dicta ad
-                                        quidem
-                                        ullam minus esse molestiae blanditiis ea! Eius vitae ut vero quos, est porro
-                                        dicta,
-                                        optio doloribus eligendi enim ratione commodi dolorem alias natus officiis
-                                        aliquam
-                                        facilis, laudantium perspiciatis maiores. In deserunt delectus dolorum sed
-                                        incidunt
-                                        eum consectetur! Inventore consectetur iste harum fugiat at odio, praesentium
-                                        fuga
-                                        natus quae dolor nihil non vel nam ex similique nostrum tenetur voluptates
-                                        corporis
-                                        velit officiis ad. Earum, aspernatur dolor reprehenderit recusandae laboriosam
-                                        mollitia commodi quos voluptatum nemo est dolorum sed animi cupiditate tenetur
-                                        temporibus voluptatem minus porro similique odit. Laboriosam optio excepturi
-                                        corporis totam! Vel doloremque temporibus neque dolorum voluptate vero odio,
-                                        nihil
-                                        sint facere consequuntur necessitatibus atque eveniet ad qui? Consequatur,
-                                        architecto sint esse commodi tempore aliquam, voluptates recusandae tenetur
-                                        omnis
-                                        fugiat porro! Beatae, modi aperiam magni molestiae itaque illo excepturi velit,
-                                        nihil dolor voluptatibus eaque vel sunt corrupti enim mollitia sint est placeat
-                                        dolorum. Deserunt magnam laboriosam atque repellendus nobis qui impedit
-                                        consectetur?
-                                        Est suscipit perspiciatis iusto sunt, atque voluptate, facilis nihil itaque
-                                        illum
-                                        nam id quidem nemo ea incidunt enim? Dolor velit tempore eveniet labore quaerat
-                                        expedita reprehenderit!
-                                </p>
-                                <% }else{ %>
-                                    <div style="
-                                    display: flex;
-                                    justify-content: center;
-                                    margin: auto;
-                                ">
-                                        <img src="/statics/<%= festival.path %>"
-                                            class=" hover-shadow festival-imageNotice festival-imageNotice-single  mx-auto d-block "
-                                            alt="<%= festival.title %>" />
-                                        <% } %>
-                                    </div>
-                                    <p></p>
+                                <% festival.imagespath.forEach( (festImage)=> {%>
+                                    <img src="/statics<%=festImage%>" class=" hover-shadow festival-image"
+                                        alt=" <%= festival.title %>">
+                                    <% }) %>
+                                        <p>
+                                            <%= festival.content %>
+                                        </p>
+                                        <% }else{ %>
+                                            <div class="row" style="display: flex;
+                                                        justify-content: center;
+                                                        margin: auto;">
+                                                <% festival.imagespath.forEach( (img)=> { %>
+                                                    <div class="col-xl-3 col-lg-4  col-md-6 col-12 m-2 max-m-5 m-auto vw-100">
+                                                        <img src="/statics<%= img %>"
+                                                            class=" hover-shadow festival-imageNotice festival-imageNotice-single <text-center></text-center>  mx-auto d-block "
+                                                            alt="<%= festival.title %>" />
+                                                    </div>
+                                                    <% }) %>
+                                                        <p></p>
+                                            </div>
+                                            <% } %>
+
                         </div>
                     </div>
+
                 </div>
+            </div>
             </div>
             <!-- footer -->
             <%- include('./partials/footer') %>

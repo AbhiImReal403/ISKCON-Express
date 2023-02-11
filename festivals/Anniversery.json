@@ -1,0 +1,11 @@
+{
+    "title": "1st Anniversary",
+    "content": "",
+    "cardImg": "/Assets/images/festivals/fest.jpeg",
+    "imagespath": [
+        "/Assets/images/festivals/fest.jpeg",
+        "/Assets/images/festivals/fest1.jpeg",
+        "/Assets/images/festivals/fest2.jpeg"
+    ],
+    "date": "11 Feb"
+}
